@@ -1,0 +1,7 @@
+{
+"label":"ZeroTier Leave",
+"icon":"icon.png",
+"iconsel":"icon.png",
+"launch":"launch.sh",
+"description":"ZeroTier leave"
+}

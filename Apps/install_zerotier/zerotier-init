@@ -1,0 +1,37 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+STOP=10
+
+USE_PROCD=1
+PROG=/usr/sbin/zerotier-one
+PIDFILE=/var/lib/zerotier-one/zerotier-one.pid
+EXTRA_OPTS="-d"
+
+start() {
+    echo "Starting"
+    procd_open_instance
+    procd_set_param command $PROG $EXTRA_OPTS
+    procd_set_param pidfile $PIDFILE
+    procd_set_param respawn
+    procd_close_instance
+}
+
+stop() {
+    kill $(cat $PIDFILE)
+    rm -f $PIDFILE
+}
+
+restart() {
+    stop
+    sleep 1
+    start
+}
+
+boot() {
+    start
+}
+
+service_triggers() {
+    procd_add_reload_trigger "zerotier"
+}

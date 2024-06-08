@@ -1,0 +1,7 @@
+{
+"label":"Up ZeroTier",
+"icon":"icon.png",
+"iconsel":"icon.png",
+"launch":"launch.sh",
+"description":"Up ZeroTier"
+}

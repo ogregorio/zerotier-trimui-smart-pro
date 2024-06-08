@@ -1,0 +1,7 @@
+{
+"label":"Install ZeroTier",
+"icon":"icon.png",
+"iconsel":"icon.png",
+"launch":"launch.sh",
+"description":"Install ZeroTier in TrimUI"
+}
