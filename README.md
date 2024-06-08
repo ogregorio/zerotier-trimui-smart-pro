@@ -28,6 +28,7 @@ This guide provides details on how ZeroTier VPN support was integrated into the 
    ```
 
 2. **Execute the Script:**
+   Copy Apps folder to the root of your TSP SDCARD.
    Follow these steps to install and manage ZeroTier:
 
    - **Install ZeroTier:** Run the "Install ZeroTier" app (this needs to be done only once).
